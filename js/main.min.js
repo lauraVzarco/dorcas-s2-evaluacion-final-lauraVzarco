@@ -1,9 +1,14 @@
 'use strict';
 var input = document.querySelector('.js-input');
 var button =document.querySelector('.js-button');
-
+var main = document.querySelector('main');
+var box = document.createElement('div');
+var showBox = document.createElement('div');
+var img;
+var titleShow;
 
 function getShowInfo(){
+  showBox.innerHTML = '';
   console.log(input);
   fetch('http://api.tvmaze.com/search/shows?q=' + input.value)
     .then(function(response) {
@@ -13,11 +18,9 @@ function getShowInfo(){
       console.log(json);
       for (var i = 0; i < json.length; i++) {
         //defino variables
-        var main = document.querySelector('main');
-        var box = document.createElement('div');
-        var showBox = document.createElement('div');
-        var img = document.createElement('img');
-        var titleShow = document.createElement('p');
+        var currentShow = document.querySelectorAll('.showInfo');
+        img = document.createElement('img');
+        titleShow = document.createElement('p');
         //Doy clases a los elementos creados
         box.classList.add('box');
         showBox.classList.add('showInfo');
@@ -39,7 +42,9 @@ function getShowInfo(){
         } else {
           img.src = json[i].show.image.medium;
         }
-
+        for (var j = 0; j < showBox.length; j++) {
+          showBox[j].addEventListener('click', )
+        }
       }
     });
 }
