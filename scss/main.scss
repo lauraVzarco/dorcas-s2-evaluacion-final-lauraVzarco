@@ -1,6 +1,10 @@
 @import 'core/settings';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat #fff;
-	height: 100vh;
+.showInfo {
+  background-color: pink;
+}
+
+.favorite {
+  background-color: lightblue;
+  border: 2px solid blue;
 }
