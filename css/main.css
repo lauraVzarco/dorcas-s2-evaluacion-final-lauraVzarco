@@ -1,10 +1,80 @@
+.button {
+  width: 75px;
+  height: 25px;
+  background-color: #bc537f;
+  border: none;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.pageTitle {
+  font-family: "Josefin Sans", sans-serif;
+  color: #bc537f;
+  font-size: 48px;
+}
+
+.paraSearch {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.titleShow {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.paraSearch {
+  margin-left: 20px;
+}
+
+.input {
+  margin-left: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #bc537f;
+}
+
+.box {
+  margin: 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
 .showInfo {
-  background-color: pink;
+  width: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc537f), to(pink));
+  background: linear-gradient(#bc537f, pink);
+  border: 2px solid #bc537f;
+}
+
+.showImg {
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+.titleShow {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .favorite {
-  background-color: lightblue;
-  border: 2px solid blue;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b7dbff), to(#5081b2));
+  background: linear-gradient(#b7dbff, #5081b2);
+  border: 2px solid #5081b2;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

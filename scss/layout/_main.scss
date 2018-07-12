@@ -1,0 +1,43 @@
+//main
+
+//parte de Search
+.paraSearch {
+  margin-left: 20px;
+}
+
+.input {
+  margin-left: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $color-pink-fairy;
+}
+//parte series
+.box {
+  margin: 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.showInfo {
+  width: 300px;
+  background: linear-gradient($color-pink-fairy, $color-pink-unicorn);
+  border: 2px solid $color-pink-fairy;
+}
+
+.showImg {
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+.titleShow {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.favorite {
+  background: linear-gradient($color-blue-mermaid, $color-blue-witch);
+  border: 2px solid $color-blue-witch;
+}

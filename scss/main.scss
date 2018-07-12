@@ -1,10 +1,6 @@
-@import 'core/settings';
-
-.showInfo {
-  background-color: pink;
-}
-
-.favorite {
-  background-color: lightblue;
-  border: 2px solid blue;
-}
+@import 'core/variables';
+@import 'components/buttons';
+@import 'components/typography';
+@import 'layout/header';
+@import 'layout/main';
+@import 'pages/home';
