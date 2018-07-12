@@ -12,6 +12,7 @@ box.classList.add('box');
 //función para cambiar el color
 function toggleFavorite(e){
   e.currentTarget.classList.toggle('favorite');
+
 }
 
 //función principal
@@ -50,6 +51,7 @@ function getShowsInfo(){
         showBox.addEventListener('click', toggleFavorite);
         //una vez tengo el show box lo añado a la página
         box.append(showBox);
+        console.log(json[i].show.id);
       }
     });
 }
